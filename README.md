@@ -1,7 +1,8 @@
 # Installation instructions
 
 yarn install
-rename .env.example to .env, put in your private key
+
+Rename .env.example to .env, put in your private key
 
 # To run example
 
