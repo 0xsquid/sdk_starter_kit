@@ -11,13 +11,14 @@ if (!privateKey)
   // instantiate the SDK
 
   const squid = new Squid({
-    baseUrl: "https://testnet.api.0xsquid.com", // for testnet use "https://testnet.api.0xsquid.com"
+    baseUrl: "https://api.0xsquid.com", // for testnet use "https://testnet.api.0xsquid.com"
   });
 
   // init the SDK
   await squid.init();
   console.log("Squid inited");
 
+  // use the RPC provider of the "from" chain
   const provider = ethers.getDefaultProvider(
     "https://api.avax.network/ext/bc/C/rpc"
   );
